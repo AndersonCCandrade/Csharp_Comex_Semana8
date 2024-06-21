@@ -2,12 +2,19 @@
 
 namespace Csharp_Modelos.Modelos.Produtos;
 
+/// <summary>
+/// Classe modelo de criação de pedido
+/// </summary>
 public class Pedido
 {
     
     public Cliente Cliente { get; }
     public DateTime Date { get; }
     public List<ItemDePedido> Itens { get; }
+
+    /// <summary>
+    /// Método que soma e retorna o valor total do pedido
+    /// </summary>
     public double Total
 
     {
@@ -17,12 +24,21 @@ public class Pedido
         }
     }
 
+    /// <summary>
+    /// Construtor da classe pedido responsavel criar um pedido
+    /// e abrir uma lista de itens do pedido
+    /// </summary>
+    /// <param name="cliente">Parametro do tipo Cliente que recebe o nome do cliente</param>
     public Pedido(Cliente cliente)
     {
         Cliente = cliente;
         Date = DateTime.Now;
         Itens = new List<ItemDePedido>();        
     }
+
+    /// <summary>
+    /// Método que exibi os detalhes do pedido.
+    /// </summary>
     public void ExibirDetalhesDoPedido()
     {
         Console.WriteLine(
@@ -31,6 +47,10 @@ public class Pedido
         Console.WriteLine($"Valor Total do Pedido: R$ {Total}");
     }
 
+    /// <summary>
+    /// Método responsavel por adicionar um item ao pedido
+    /// </summary>
+    /// <param name="item">Item do pedido</param>
     public void AdicionarItem(ItemDePedido item)
     {
         Itens.Add(item);
