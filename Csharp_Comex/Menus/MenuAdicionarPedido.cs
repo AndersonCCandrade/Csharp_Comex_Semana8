@@ -1,8 +1,6 @@
 ﻿using Csharp_Comex.Menus.ValidarOpcaoDeMenu;
 using Csharp_Modelos.Modelos.Clientes;
 using Csharp_Modelos.Modelos.Produtos;
-using System;
-
 
 namespace Csharp_Comex.Menus;
 

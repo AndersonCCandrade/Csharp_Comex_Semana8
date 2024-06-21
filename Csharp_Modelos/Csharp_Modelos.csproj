@@ -4,6 +4,10 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Version>2.0.0</Version>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Classes modelos</Title>
+    <Description>Este pacote destina-se a fornecer classes e modelos de interfaces para projetos comerciais.</Description>
   </PropertyGroup>
 
 </Project>
