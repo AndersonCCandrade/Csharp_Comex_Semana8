@@ -8,7 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Csharp_Modelos\Csharp_Modelos.csproj" />
+    <PackageReference Include="Csharp_Modelos" Version="2.0.0" />
   </ItemGroup>
+
+  <!--<ItemGroup>
+    <ProjectReference Include="..\Csharp_Modelos\Csharp_Modelos.csproj" />
+  </ItemGroup>-->
 
 </Project>
